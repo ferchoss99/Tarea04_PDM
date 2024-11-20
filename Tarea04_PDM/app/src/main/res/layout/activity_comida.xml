@@ -1,0 +1,115 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Planes alimenticios -->
+
+        <!-- Sección de dieta para subir de peso -->
+        <TextView
+            android:id="@+id/weight_gain_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gain_weight"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/weight_gain_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/alto_calorias"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/weight_gain_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/high_calories"
+            android:background="@color/green"
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <!-- Sección de dieta para bajar de peso -->
+        <TextView
+            android:id="@+id/weight_loss_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lose_weight"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/weight_loss_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/bajo_calorias"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/weight_loss_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/low_calories"
+            android:background="@color/green"
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <!-- Formulario para peso y talla -->
+        <TextView
+            android:id="@+id/form_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/input_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/input_talla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/measures"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular (IMC)"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

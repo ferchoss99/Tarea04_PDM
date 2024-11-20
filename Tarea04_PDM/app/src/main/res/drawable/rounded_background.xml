@@ -1,0 +1,22 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <!-- Define el color de fondo -->
+    <solid android:color="#FFFFFF" /> <!-- Cambia a tu color de fondo deseado -->
+
+    <!-- Define el contorno -->
+    <stroke
+        android:width="3sp"
+        android:color="#000000"/> <!-- Color del contorno -->
+
+    <!-- Define el radio de las esquinas -->
+    <corners android:radius="16dp" /> <!-- Ajusta el radio según lo necesites -->
+
+    <!-- Define el padding interno opcional -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>
+
