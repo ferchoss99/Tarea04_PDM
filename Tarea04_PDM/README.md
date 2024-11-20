@@ -1,5 +1,6 @@
 # Tarea4
 Programación de dispositivos moviles
 
-CERVANTES DUARTE JOSE FERNANDO 
-MILDRED PAOLA MARTINEZ HIDALGO
+## CERVANTES DUARTE JOSE FERNANDO 
+
+## Paola Mildred Martinez Hidalgo
