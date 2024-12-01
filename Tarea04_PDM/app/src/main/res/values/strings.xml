@@ -8,7 +8,7 @@
     <string name="bien">Bienvenido</string>
     <string name="usuarioo">Usuario</string>
     <string name="contrasenia">Contraseña</string>
-    <string name="usuarioText">fulano</string>
+    <string name="usuarioText">Ingresar_usuario</string>
     <string name="contraseniaText">********</string>
     <string name="login">Entrar</string>
     <string name="register">Registrar</string>
@@ -85,6 +85,17 @@
     <string name="incorreo">Ingresar correo\n</string>
     <string name="correo_electronico">Correo electronico\n</string>
     <string name="registro">Registro</string>
+    <string name="coach1">LEAN BEEF PATTY</string>
+    <string name="coach2">Chris Bumstead (CBUM)</string>
+    <string name="coach3">Carlos Belcast</string>
+    <string name="coach4">Carol Vaz</string>
+    <string name="des_coach1">Instructora de fitness. Es popular por sus rutinas de entrenamiento en línea. Sus ejercicios incluyen levantamiento de pesas, flexiones y calistenia.</string>
+    <string name="des_coach2"> Es un destacado fisicoculturista profesional canadiense de la IFBB, ganador del torneo Mr. Olympia cinco años seguidos.</string>
+    <string name="des_coach3">Celebridad y atleta profesional del fitness. Ha obtenido una gran popularidad por sus consejos sobre regímenes de ejercicios, tutoriales de ejercicios y guías de dietas saludables. </string>
+    <string name="des_coach4">Instructora fitness de Brasil que ha conquistado a millones de seguidores con sus rutinas intensas y estrictas.</string>
+
+
+
 
 
 </resources>

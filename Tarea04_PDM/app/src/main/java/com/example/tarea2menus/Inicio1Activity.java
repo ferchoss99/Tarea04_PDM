@@ -95,7 +95,11 @@ public class Inicio1Activity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                 if(menuItem.getItemId()==R.id.menu_settings){
-                    Log.i("ActionBar", "settings 2!");
+                    Log.i("ActionBar", "info2!");
+                    //Creamos el Intent
+                    Intent intent = new Intent(Inicio1Activity.this, EntrenadorActivity.class);
+                    startActivity(intent);
+
 
                 }
                 if(menuItem.getItemId()==R.id.menu_info){
