@@ -5,7 +5,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ExercisesGymActivity extends AppCompatActivity {
+public class ExercisesGymActivity extends BaseNavBar {
 
     // Declaración de las vistas
     private TextView headerText;
@@ -16,7 +16,9 @@ public class ExercisesGymActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercises_gym);
+       // setContentView(R.layout.activity_exercises_gym);
+        getLayoutInflater().inflate(R.layout.activity_exercises_gym, findViewById(R.id.container));
+
 
         // Inicialización de las vistas
         headerText = findViewById(R.id.header_text);

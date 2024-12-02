@@ -1,6 +1,7 @@
 package com.example.tarea2menus;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -32,7 +33,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class PerfilActivity extends AppCompatActivity {
+public class PerfilActivity extends BaseNavBar{
 
     private TextView profileName;
     private TextView profileEmail;
@@ -44,7 +45,9 @@ public class PerfilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil);
+        //setContentView(R.layout.activity_perfil);
+        getLayoutInflater().inflate(R.layout.activity_perfil, findViewById(R.id.container));
+        getSupportActionBar();
 
         // Vinculamos los elementos de la interfaz con el código
         ImageView iconImage = findViewById(R.id.icon_image);
@@ -54,7 +57,7 @@ public class PerfilActivity extends AppCompatActivity {
         changeDataButton = findViewById(R.id.change_data_button);
         changePasswordButton = findViewById(R.id.change_password_button);
         logoutButton = findViewById(R.id.logout_button);
-
+        /*
         // Obtenemos los datos del intent
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -66,6 +69,11 @@ public class PerfilActivity extends AppCompatActivity {
                 Toast.makeText(this, "No se recibió el nombre del usuario", Toast.LENGTH_SHORT).show();
             }
         }
+        */
+        SharedPreferences sharedPreferences = getSharedPreferences("UsuarioActual", MODE_PRIVATE);
+        String nombre = sharedPreferences.getString("usuario", "Desconocido");
+        profileName.setText(nombre);
+
 
         // Acciones para los botones
         changeDataButton.setOnClickListener(new View.OnClickListener() {

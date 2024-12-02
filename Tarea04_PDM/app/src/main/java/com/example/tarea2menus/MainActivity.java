@@ -17,6 +17,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.Intent;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Para la base de datos
         UsuariosSQLiteHelper usdbh =
-                new UsuariosSQLiteHelper(this, "DBUsuarios", null, 7);
+                new UsuariosSQLiteHelper(this, "DBUsuarios", null, 12);
         //db permite hacer operaciones en la base de datos
         SQLiteDatabase db = usdbh.getWritableDatabase();
 
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         if (nombre1.equals(nombre.getText().toString())&&codigo1.equals(contrasenia.getText().toString())){
 
                             c.close();
-                            db.close();
+                            //db.close();
 
                             //Creamos el Intent y le mandamos el nombre para aparezca en la pagina principal
                             Intent intent =
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else{
                             c.close();
-                            db.close();
+                            //db.close();
                             Intent intent =
                                     new Intent(MainActivity.this, MainActivity.class);
                             startActivity(intent);
@@ -105,11 +106,12 @@ public class MainActivity extends AppCompatActivity {
 
 
                 }else{
-                    // Log.d("DB", "No existe ");
 
+                    //Sirve para dar una breve notificación
+                    Toast.makeText(MainActivity.this, "Necesitas registrar un usuario", Toast.LENGTH_SHORT).show();
                     //Cerramos el cursor y reiniciamos la actividad
                     c.close();
-                    db.close();
+                   // db.close();
                     Intent intent =
                             new Intent(MainActivity.this, MainActivity.class);
                     startActivity(intent);

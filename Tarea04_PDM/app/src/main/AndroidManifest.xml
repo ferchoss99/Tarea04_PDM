@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Tarea2Menus"
         tools:targetApi="31">
         <activity
+            android:name=".DatosUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".BaseNavBar"
+            android:exported="false" />
+        <activity
             android:name=".ActivityRegistrar"
             android:exported="false" />
         <!--
@@ -22,63 +31,51 @@
         <activity
             android:name=".DesarrolloActivity"
             android:exported="false"
-            android:label="GYM "
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" /> <!-- Theme sirve para habilitar el accion bar  , en este caso la puso como negra -->
+            android:label="GYM " /> <!-- Theme sirve para habilitar el accion bar  , en este caso la puso como negra -->
         <activity
             android:name=".Share2Activity"
             android:exported="false"
-            android:label="SHARE"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="SHARE" />
         <activity
             android:name=".CalendarActivity"
             android:exported="false"
-            android:label="CALENDARIO"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="CALENDARIO" />
         <activity
             android:name=".ComidaActivity"
             android:exported="false"
-            android:label="COMIDA"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="COMIDA" />
         <activity
             android:name=".PerfilActivity"
             android:exported="false"
-            android:label="PERFIL"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="PERFIL" />
         <activity
             android:name=".ExercisesHomeActivity"
             android:exported="false"
-            android:label="EJERCICIOS_CASA"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="EJERCICIOS_CASA" />
         <activity
             android:name=".ExercisesGymActivity"
             android:exported="false"
-            android:label="EJERCICIOS_GYM"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="EJERCICIOS_GYM" />
         <activity
             android:name=".EntrenadorActivity"
             android:exported="false"
-            android:label="ENTRENADOR"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+            android:label="ENTRENADOR" />
         <activity
             android:name=".ExerciseListActivity"
             android:exported="false"
-            android:label="ESTIRAMIENTOS"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+            android:label="ESTIRAMIENTOS" />
         <activity
             android:name=".ExerciseItem"
             android:exported="false"
-            android:label="LISTA"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+            android:label="LISTA" />
         <activity
             android:name=".Secundaria2Activity"
             android:exported="false"
-            android:label="INFO"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="INFO" />
         <activity
             android:name=".Inicio1Activity"
             android:exported="false"
-            android:label="GYM RAT"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:label="GYM RAT" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -27,7 +27,7 @@
 
     <item
         android:id="@+id/menu_modify_Plan"
-        android:title="@string/modifyPlan"
+        android:title="@string/datos_usuario"
         app:showAsAction="never" />
     <item
         android:id="@+id/menu_exit"

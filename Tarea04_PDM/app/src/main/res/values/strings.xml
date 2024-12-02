@@ -93,9 +93,10 @@
     <string name="des_coach2"> Es un destacado fisicoculturista profesional canadiense de la IFBB, ganador del torneo Mr. Olympia cinco años seguidos.</string>
     <string name="des_coach3">Celebridad y atleta profesional del fitness. Ha obtenido una gran popularidad por sus consejos sobre regímenes de ejercicios, tutoriales de ejercicios y guías de dietas saludables. </string>
     <string name="des_coach4">Instructora fitness de Brasil que ha conquistado a millones de seguidores con sus rutinas intensas y estrictas.</string>
-
-
-
+    <string name="navigation_drawer_open">d</string>
+    <string name="navigation_drawer_close">s</string>
+    <string name="datos_de_usuario">Datos de Usuario</string>
+    <string name="datos_usuario">Datos Usuario</string>
 
 
 </resources>

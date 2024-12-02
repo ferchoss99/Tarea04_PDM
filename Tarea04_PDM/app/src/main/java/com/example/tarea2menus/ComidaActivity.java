@@ -31,7 +31,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class ComidaActivity extends AppCompatActivity {
+public class ComidaActivity extends BaseNavBar {
 
     // Declaración de vistas
     private TextView weightGainTitle, weightGainDescription;
@@ -44,7 +44,9 @@ public class ComidaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comida);
+        //setContentView(R.layout.activity_comida);
+        getLayoutInflater().inflate(R.layout.activity_comida, findViewById(R.id.container));
+
 
         // Inicialización de vistas
         weightGainTitle = findViewById(R.id.weight_gain_title);

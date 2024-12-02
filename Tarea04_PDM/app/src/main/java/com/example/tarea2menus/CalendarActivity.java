@@ -31,24 +31,25 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class CalendarActivity extends AppCompatActivity {
+public class CalendarActivity extends BaseNavBar {
 
     private CalendarView calendarView;
     private TextView selectedDateTextView;
     private EditText eventNameEditText;
     private Button saveEventButton;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
+       // setContentView(R.layout.activity_calendar);
+        getLayoutInflater().inflate(R.layout.activity_calendar, findViewById(R.id.container));
 
         // Inicializar vistas
         calendarView = findViewById(R.id.calendar_view);
         selectedDateTextView = findViewById(R.id.selected_date);
         eventNameEditText = findViewById(R.id.event_name);
         saveEventButton = findViewById(R.id.save_event_button);
-        setContentView(R.layout.activity_calendar);
 
 
         // Configurar evento al seleccionar una fecha

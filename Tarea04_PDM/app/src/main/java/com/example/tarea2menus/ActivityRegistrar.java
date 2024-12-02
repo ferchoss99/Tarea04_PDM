@@ -26,7 +26,7 @@ public class ActivityRegistrar extends AppCompatActivity {
 
         // Crear una instancia del helper
         //Importante tener todas las instancias que ocupemos la misma version.
-        UsuariosSQLiteHelper usdbh = new UsuariosSQLiteHelper(this, "DBUsuarios", null, 7);
+        UsuariosSQLiteHelper usdbh = new UsuariosSQLiteHelper(this, "DBUsuarios", null, 12);
 
         // Abrir la base de datos en modo escritura
         SQLiteDatabase db = usdbh.getWritableDatabase();
@@ -81,12 +81,12 @@ public class ActivityRegistrar extends AppCompatActivity {
 
                 // Cerrar el cursor y la base de datos
                 c.close();
-                db.close();
                  */
 
 
 
 
+                //db.close();
 
                 //Creamos el Intent y regresamos a la pagina de Bienvenida
                 Intent intent =

@@ -33,7 +33,9 @@ public class DesarrolloActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //Esta estaba desde antes
        // EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_desarrollo);
+        //setContentView(R.layout.activity_desarrollo);
+        getLayoutInflater().inflate(R.layout.activity_desarrollo, findViewById(R.id.container));
+
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
