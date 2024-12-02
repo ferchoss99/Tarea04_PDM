@@ -110,7 +110,7 @@ public class DatosUsuario extends BaseNavBar {
         textView.setText("Nombre: " + nombre + "\n Email: " + email1 + "\n Genero: " + genero1
                 + "\n Meta: " + meta1+ "\n Comentario: " + comentario1+"\n Dias de entrenamiento "+resultado);
 
-
+    db.close();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.datos), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

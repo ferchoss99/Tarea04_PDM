@@ -86,7 +86,7 @@ public class ActivityRegistrar extends AppCompatActivity {
 
 
 
-                //db.close();
+                db.close();
 
                 //Creamos el Intent y regresamos a la pagina de Bienvenida
                 Intent intent =
@@ -94,7 +94,7 @@ public class ActivityRegistrar extends AppCompatActivity {
 
                 //Iniciamos la nueva actividad
                 startActivity(intent);
-
+                finish();
             }
         });
 

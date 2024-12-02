@@ -77,11 +77,12 @@ public class MainActivity extends AppCompatActivity {
                         if (nombre1.equals(nombre.getText().toString())&&codigo1.equals(contrasenia.getText().toString())){
 
                             c.close();
-                            //db.close();
+                            db.close();
 
                             //Creamos el Intent y le mandamos el nombre para aparezca en la pagina principal
                             Intent intent =
                                     new Intent(MainActivity.this, Inicio1Activity.class);
+
                             //Creamos la información a pasar entre actividades
                             Bundle b = new Bundle();
                             b.putString("NOMBRE", nombre.getText().toString());
@@ -89,7 +90,9 @@ public class MainActivity extends AppCompatActivity {
                             intent.putExtras(b);
                             //Iniciamos la nueva actividad
                             startActivity(intent);
-
+                            //Aqui es nuy util para que ya no regrese a la actividad la cierra por completo
+                            // asi que la saca de la aplicación y obliga a ingresar de nuevo
+                            finish();
 
                         }
                         else{
@@ -118,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
                 }
             }
         });
@@ -135,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //Iniciamos la nueva actividad
                 startActivity(intent);
+                finish();
 
 
             }
